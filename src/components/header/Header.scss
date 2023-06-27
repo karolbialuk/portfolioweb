@@ -4,13 +4,14 @@ $peakopacity:0.3;
 
 .header{
 
-    background-image: linear-gradient(to right top, #000000, #131313, #1f1f1f, #2b2b2b, #373737);
+    background-image: linear-gradient(to top, #131313, #1c1c1c, #252525, #2e2e2e, #373737);
     max-height: 95vh;
     color: #ffff;
     // font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     // font-family: 'Sanchez', serif;
     & &__container{
+        
    
     }
 
@@ -35,7 +36,7 @@ $peakopacity:0.3;
             font-weight: bold;
             letter-spacing: 4px;
             color: #fffefe00;
-            text-shadow: 0 0 2px rgb(255, 255, 255);
+            text-shadow: 0 0 1px rgb(255, 255, 255);
 
         }
 
@@ -50,8 +51,19 @@ $peakopacity:0.3;
         }
     }
 
+    & &__p-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
     & &__container-text-h1{
         min-height: 55vh;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
         width: 35%;
     }
 

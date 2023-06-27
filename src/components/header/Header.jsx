@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import { Navbar } from "../index";
+
 import Typewriter from "typewriter-effect";
 
 const Header = () => {

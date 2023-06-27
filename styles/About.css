@@ -1,4 +1,94 @@
 .about {
   height: 100vh;
-  background: rgb(218, 218, 218);
+  background: #D5D5D5;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+.about .about__container {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.about .about__container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about .about__container.visible .about__element {
+  background: #d6d6d6;
+  box-shadow: 20px 20px 60px #8f8f8f, -20px -20px 60px #ffffff;
+}
+.about .about__element {
+  width: 550px;
+  min-height: 250px;
+  text-align: center;
+  border-radius: 25px;
+  transition: 0.5s ease;
+}
+.about .about__element:hover {
+  border-radius: 35px;
+}
+.about .about__element-text-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: flex-start;
+  height: 100%;
+  padding: 25px 0;
+}
+.about .about__element-text-left {
+  text-align: justify;
+  margin-left: 40px;
+  width: 30%;
+}
+.about .about__element-text-left p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about .about__element-text-left ul {
+  padding: 0 15px;
+}
+.about .about__element-text-left li {
+  font-size: 0.8rem;
+  margin: 5px 0;
+  text-align: left;
+}
+.about .about__element-text-right {
+  width: 70%;
+  text-align: justify;
+  margin-right: 40px;
+}
+.about .about__element-text-right h3 {
+  margin: 0;
+  padding: 0;
+}
+.about .about__element-text-right h4 {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+.about .about__element-text-right p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.about .about__header h1 {
+  margin-top: 30px;
+  font-size: clamp(50px, 5.5vw, 120px);
+}
+.about .about__header-second h1 {
+  margin-top: 100px;
+  font-size: clamp(25px, 2vw, 60px);
+}
+.about .about__element-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 100px;
 }/*# sourceMappingURL=About.css.map */
