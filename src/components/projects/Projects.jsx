@@ -46,7 +46,7 @@ const Projects = () => {
                     isElementVisible ? "visible" : ""
                   }`}
                 >
-                  <a href="https://mojemecze.netlify.app">
+                  <a href="https://github.com/karolbialuk/footballapp">
                     <img src={img4} alt="img4" />
 
                     <div className="projects__element-text">
@@ -87,7 +87,7 @@ const Projects = () => {
                     isElementVisible ? "visible" : ""
                   }`}
                 >
-                  <a href="https://mojnetflix.netlify.app">
+                  <a href="https://github.com/karolbialuk/netflix">
                     <img src={img1} alt="img1" />
 
                     <div className="projects__element-text">
@@ -127,7 +127,7 @@ const Projects = () => {
                     isElementVisible ? "visible" : ""
                   }`}
                 >
-                  <a href="https://mojgenerator.netlify.app">
+                  <a href="https://github.com/karolbialuk/generator">
                     <img src={img2} alt="img2" />
 
                     <div className="projects__element-text">
@@ -170,7 +170,7 @@ const Projects = () => {
                     isElementVisible ? "visible" : ""
                   }`}
                 >
-                  <a href="https://mojamuzyka.netlify.app">
+                  <a href="https://github.com/karolbialuk/spotify">
                     <img src={img3} alt="img3" />
 
                     <div className="projects__element-text">
