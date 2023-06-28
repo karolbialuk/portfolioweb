@@ -5,6 +5,14 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+
+      
+
   }
   
   code {
@@ -14,9 +22,11 @@ body {
   
 
   .root{
-
+    max-width: 100vw;
+    
   
     & &__main-container{
+      width: 100%;
 
     }
   }

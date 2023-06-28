@@ -12,9 +12,9 @@ const Navbar = () => {
           </div>
 
           <div className="navbar__item">
-            <div>O mnie</div>
-            <div>Projekty</div>
-            <div>Kontakt</div>
+            <div className="navbar__item-element">O mnie</div>
+            <div className="navbar__item-element">Projekty</div>
+            <div className="navbar__item-element">Kontakt</div>
           </div>
         </div>
       </div>

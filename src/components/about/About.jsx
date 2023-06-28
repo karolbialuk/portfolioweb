@@ -8,18 +8,25 @@ import {
   redux,
   next,
   typescript,
+  mui,
+  scss,
 } from "../../assets/imgs/";
 import Typewriter from "typewriter-effect";
+import { useMediaQuery } from "react-responsive";
+
 const About = () => {
   const [isContainerVisible, setisContainerVisible] = useState(false);
   const [isContainer2Visible, setisContainer2Visible] = useState(false);
   const [isElementVisible, setisElementVisible] = useState(false);
 
+  const isTablet = useMediaQuery({ maxHeight: 768 });
+  const isMobile = useMediaQuery({ maxHeight: 500 });
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const triggerHeight = 400;
-      const trigger2Height = 650;
+      const triggerHeight = isTablet ? 100 : isMobile ? 50 : 0;
+      const trigger2Height = isTablet ? 200 : 650;
       const trigger3Height = 820;
       setisContainerVisible(scrollPosition > triggerHeight);
       setisElementVisible(scrollPosition > trigger2Height);
@@ -39,6 +46,9 @@ const About = () => {
         <div className="about__header">
           <h1>
             <Typewriter
+              options={{
+                loop: true,
+              }}
               onInit={(typewriter) => {
                 typewriter
                   .typeString("O mnie")
@@ -69,12 +79,11 @@ const About = () => {
                 <h3>Web Developer</h3>
                 <h4>NS Code · Staż</h4>
                 <p>
-                  Staż mający na celu pokazanie struktury pracy w firmie
-                  programistycznej zajmującej się tworzeniem stron internetowych
-                  w różnych środowiskach oraz dostarczenie podstawowej wiedzy z
-                  zakresu tworzenia stron internetowych. w różnych środowiskach
-                  i dostarczenie podstawowej wiedzy z zakresu tworzenia stron
-                  internetowych.
+                  Staż studencki, wprowadzający do zagadnień związanych z
+                  tworzeniem stron internetowych. Tworzone projekty opierały się
+                  głównie na WordPress a praca dotyczyła głównie operowania na
+                  szablonach, modyfikowania ich oraz wprowadzania nowych
+                  elementów do gotowych stron internetowych.
                 </p>
               </div>
             </div>
@@ -97,10 +106,11 @@ const About = () => {
                 <h3>Web Developer</h3>
                 <h4>UDX · Staż</h4>
                 <p>
-                  Staż mający na celu pokazanie struktury pracy w firmie
-                  programistycznej zajmującej się tworzeniem stron internetowych
-                  w różnych środowiskach i dostarczenie podstawowej wiedzy z
-                  zakresu tworzenia stron internetowych.
+                  Staż studencki, ukazujący szeroko przebieg oraz strukturę
+                  pracy podczas tworzonych projektów stron internetowych.
+                  Projekty skupiały się na WordPress. Wyjątkowo zdarzały się
+                  strony internetowe, wykorzystujące czysty HTML w połączeniu z
+                  JavaScript i CSS.
                 </p>
               </div>
             </div>
@@ -143,6 +153,12 @@ const About = () => {
             </div>
             <div className="about__techstack-element-container">
               <div className="about__techstack-element">
+                <img src={scss} alt="scss" />
+              </div>
+              <div>SCSS</div>
+            </div>
+            <div className="about__techstack-element-container">
+              <div className="about__techstack-element">
                 <img src={javascript} alt="javascript" />
               </div>
               <div>JavaScript</div>
@@ -152,6 +168,12 @@ const About = () => {
                 <img src={redux} alt="redux" />
               </div>
               <div>Redux</div>
+            </div>
+            <div className="about__techstack-element-container">
+              <div className="about__techstack-element">
+                <img src={mui} alt="mui" />
+              </div>
+              <div>MUI</div>
             </div>
             <div className="about__techstack-element-container">
               <div className="about__techstack-element image-loading">

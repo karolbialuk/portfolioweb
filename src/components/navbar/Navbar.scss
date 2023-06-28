@@ -13,9 +13,10 @@
     
 
     & &__container{
-        height: 3vw;
+        height: 5vh;
         background: rgba(22, 22, 23, 0.123);
         width: 40%;
+        min-width: 200px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -32,7 +33,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 15px 30px;
+        padding: 0 2vw;
         
     }
 
@@ -47,5 +48,13 @@
         justify-content: center;
         align-items: center;
         gap: 25px;
+        font-size: clamp(10px, 1vw, 50px);
+    }
+
+    & &__item-element{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 10px;
     }
 }

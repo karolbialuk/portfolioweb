@@ -1,3 +1,5 @@
 export { Header } from './header/Header'
 export { Navbar } from './navbar/Navbar'
 export { About } from './about/About'
+export { Projects } from './projects/Projects'
+export {Contact} from './contact/Contact'

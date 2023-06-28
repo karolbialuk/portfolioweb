@@ -1,7 +1,8 @@
 
 .about{
-    height: 100vh;
+    // width: 100vw;
     background: #D5D5D5;
+    
     display: flex;
     flex-direction: column ;
     align-items: center;
@@ -10,10 +11,11 @@
     
 
     & &__container{
-        width: 80%;
+        width: 100%;
+        // min-height: 450px;
+        min-height: 550px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
         opacity: 0;
         transform: translateY(80px);
@@ -32,12 +34,15 @@
     }
 
 
+
     & &__element{
-        width: 550px;
-        min-height: 250px;
+        max-width: 500px;
+        width: 100%;
+        height: 100%;
         text-align: center;
         border-radius: 25px;
         transition: 0.5s ease;
+        margin: auto 0;
         
         &:hover{
             border-radius: 35px;
@@ -55,7 +60,8 @@
     }
 
     & &__container-second{
-        margin-top: 100px;
+        margin: 80px 0 60px 0;
+        min-width: 45vw;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -82,33 +88,44 @@
     & &__element-text-container{
         display: flex;
         justify-content: center;
-        gap: 15px;
         align-items: flex-start;
-        height: 100%;
-        padding: 25px 0;
+        width: 100%;
+        gap: 10px;
+        padding: 1vw 0;
+       
     }
 
     & &__element-text-left{
         text-align: justify;
         margin-left: 40px;
-        width: 30%;
+        margin-right: 40px;
+        margin-top: 3px;
+        width: 11vw;
 
         p{
             margin: 0;
-            font-size: 0.8rem;
+            font-size: clamp(8px, 0.8vw, 20px);
             font-weight: bold;
+            text-align: left;
             margin-bottom: 10px;
+            width: 100%;
+            
         }
 
         ul{
             padding: 0 15px;
-    // list-style-type: none;
+            width: 100%;
+            
+            
+            // list-style-type: none;
         }
 
         li{
-            font-size: 0.8rem;
+            // font-size: 0.8rem;
+            font-size: clamp(10px, 0.75vw, 30px);
             margin: 5px 0;
             text-align: left;
+            
         }
 
         
@@ -117,6 +134,7 @@
 
     & &__element-text-right{
         width: 70%;
+        height: 100%;
         text-align: justify;
         margin-right: 40px;
 
@@ -132,7 +150,8 @@
 
         p{
             margin: 0;
-            font-size: 0.9rem;
+            // font-size: 0.9rem;
+            font-size: clamp(10px, 0.75vw, 30px);
         }
     }
 
@@ -145,8 +164,9 @@
         }
 
         h2{
-            font-size: clamp(50px, 2vw, 120px);
+            font-size: clamp(30px, 2vw, 120px);
         }
+        margin: auto 0;
     }
 
     & &__header-second{
@@ -159,17 +179,22 @@
     & &__element-container{
         display: flex;
         width: 100%;
-        justify-content: center;
-        gap: 100px;
+        
+       justify-content: center;
+        gap: 5vw;
+        align-items: center;
         
     }
 
     & &__techstack-elements-container{
-        display: flex;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 30px;
         justify-content: center;
-        gap: 20px;
         align-items: center;
         font-size: 0.9rem;
+
     }
 
     & &__techstack-element-container{
@@ -185,13 +210,12 @@
     & &__techstack-element{
         width: 50px;
         height: 50px;
-        border-radius: 50px;
+        border-radius: 50%;
         padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        
         background: rgb(31, 31, 31);
         img{
             width: 100%;
@@ -213,4 +237,13 @@
     0% { background-position: 0% 0%; opacity: 1; }
     // 50% { background-position: 200% 0%; opacity: 0; }
     100% { background-position: 100% 0%; opacity: 0; }
+  }
+
+  @media(max-width: 700px){
+    .about{
+        & &__element-container{
+            flex-direction: column;
+            margin-top: 50px;
+        }
+    }
   }
