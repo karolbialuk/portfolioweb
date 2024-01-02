@@ -14,6 +14,7 @@ import linkedin from './linkedin.png'
 import gmail from './gmail.png'
 import mui from './mui.png'
 import scss from './scss.png'
+import wordpress from './wordpress.png'
 
 export {
   react,
@@ -32,4 +33,5 @@ export {
   linkedin,
   gmail,
   mui,
+  wordpress,
 }
