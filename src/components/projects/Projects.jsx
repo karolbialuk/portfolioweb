@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import "./Projects.scss";
 import Typewriter from "typewriter-effect";
-import { img1, img2, img3, img4, img5 } from "../../assets/imgs";
+import { img1, img2, img3, img4, img5, img6 } from "../../assets/imgs";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -76,6 +76,51 @@ const Projects = () => {
                         użytkownikom intuicyjne narzędzia do przeglądania ofert
                         samochodowych i zdobywania potrzebnych danych
                         kontaktowych.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="projects_element">
+              <div
+                className={`projects__element-content ${
+                  isContainerVisible ? "visible" : ""
+                }`}
+              >
+                <div
+                  className={`projects__element-img ${
+                    isElementVisible ? "visible" : ""
+                  }`}
+                >
+                  <a href="https://github.com/karolbialuk/chatapp">
+                    <img src={img6} alt="img6" />
+
+                    <div className="projects__element-text">
+                      <p>
+                        Aplikacja została zaprojektowana z myślą o zapewnieniu
+                        prostego i interaktywnego środowiska do komunikacji z
+                        innymi użytkownikami. Wykorzystanie Reacta, node i
+                        socket.io pozwoliło na stworzenie responsywnego
+                        interfejsu użytkownika, gwarantując płynne doświadczenia
+                        podczas korzystania z aplikacji.
+                      </p>
+                      <p>
+                        W backendzie postawiłem na Node.js, co umożliwiło mi
+                        przechowywanie wiadomości. Realizację komunikacji w
+                        czasie rzeczywistym obsługuje moduł Socket.io, co
+                        umożliwia natychmiastowe przesyłanie i odbieranie
+                        wiadomości bez potrzeby odświeżania strony.
+                      </p>
+                      <p>
+                        Wdrożyłem także system logowania i rejestracji, aby
+                        zabezpieczyć dane użytkowników oraz umożliwić dostęp do
+                        spersonalizowanych funkcji. Dzięki niemu użytkownicy
+                        mogą bezpiecznie korzystać z aplikacji, dodawać
+                        znajomych i prowadzić prywatne rozmowy. Stylizacja
+                        aplikacji została opracowana przy pomocy preprocesora
+                        SCSS, co pozwoliło lepiej zarządzać stylami i nadać
+                        aplikacji atrakcyjny wygląd.
                       </p>
                     </div>
                   </a>
