@@ -10,6 +10,7 @@ import {
   typescript,
   mui,
   scss,
+  wordpress,
 } from "../../assets/imgs/";
 import Typewriter from "typewriter-effect";
 import { useMediaQuery } from "react-responsive";
@@ -177,9 +178,9 @@ const About = () => {
             </div>
             <div className="about__techstack-element-container">
               <div className="about__techstack-element image-loading">
-                <img src={next} alt="next" />
+                <img src={wordpress} alt="wordpress" />
               </div>
-              <div>Next.js</div>
+              <div>Wordpress</div>
             </div>
             <div className="about__techstack-element-container">
               <div className="about__techstack-element image-loading">

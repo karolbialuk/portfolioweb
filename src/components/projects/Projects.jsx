@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from "react";
 import "./Projects.scss";
 import Typewriter from "typewriter-effect";
-import { img1, img2, img3, img4 } from "../../assets/imgs";
+import { img1, img2, img3, img4, img5 } from "../../assets/imgs";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -35,6 +35,53 @@ const Projects = () => {
         </div>
         <div className="projects__grid-container">
           <div className="projects__element-container">
+            <div className="projects_element">
+              <div
+                className={`projects__element-content ${
+                  isContainerVisible ? "visible" : ""
+                }`}
+              >
+                <div
+                  className={`projects__element-img ${
+                    isElementVisible ? "visible" : ""
+                  }`}
+                >
+                  <a href="https://github.com/karolbialuk/carauctionweb">
+                    <img src={img5} alt="img5" />
+
+                    <div className="projects__element-text">
+                      <p>
+                        Strona internetowa, którą stworzyłem, skupia się na
+                        umożliwieniu użytkownikom przeglądania dostępnych aukcji
+                        samochodów, sprawdzania cen, a także uzyskiwania
+                        kontaktowych informacji od sprzedających. Projekt oparty
+                        jest na technologiach React dla warstwy front-end oraz
+                        Node.js dla obsługi back-endu, przy wykorzystaniu
+                        stylizacji w formie SCSS.
+                      </p>
+                      <p>
+                        Każda aukcja zawiera szczegółowe informacje, takie jak
+                        opis, zdjęcia oraz cena. W przeciwieństwie do
+                        uczestnictwa w licytacjach, użytkownicy mogą śledzić
+                        oferty, sprawdzać aktualne ceny oraz uzyskiwać dostęp do
+                        numeru telefonu sprzedającego. Strona umożliwia także
+                        korzystanie z kont użytkownika, gdzie zapisane są
+                        preferencje i ulubione aukcje.
+                      </p>
+                      <p>
+                        Backend oparty na Node.js odpowiada za efektywne
+                        zarządzanie danymi w bazie, umożliwiając przeglądanie
+                        aukcji, aktualizację cen oraz uzyskiwanie kontaktowych
+                        informacji. Dzięki takiemu podejściu, strona dostarcza
+                        użytkownikom intuicyjne narzędzia do przeglądania ofert
+                        samochodowych i zdobywania potrzebnych danych
+                        kontaktowych.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="projects_element">
               <div
                 className={`projects__element-content ${

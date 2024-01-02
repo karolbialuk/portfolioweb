@@ -9,6 +9,7 @@ import img1 from './img1.png'
 import img2 from './img2.png'
 import img3 from './img3.png'
 import img4 from './img4.png'
+import img5 from './img5.png'
 import github from './github.png'
 import linkedin from './linkedin.png'
 import gmail from './gmail.png'
@@ -29,6 +30,7 @@ export {
   img2,
   img3,
   img4,
+  img5,
   github,
   linkedin,
   gmail,
